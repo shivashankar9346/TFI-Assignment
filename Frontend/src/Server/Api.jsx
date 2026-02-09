@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "tfi-assignment-frontend.onrender.com/api",
+  baseURL: "https://tfi-assignment-backend.onrender.com/api",
   headers: {
     "Content-Type": "application/json", // ensure JSON body
   },
