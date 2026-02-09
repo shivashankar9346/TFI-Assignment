@@ -16,6 +16,14 @@ const ContactDetails = () => {
     try {
       await API.post("/volunteers", form);
       alert("Volunteer details saved successfully");
+
+      // ✅ Reset form after submission
+      setForm({
+        fullName: "",
+        email: "",
+        contactNumber: "",
+        dob: "",
+      });
     } catch (error) {
       alert(error.response?.data?.message || "Error");
     }
@@ -31,6 +39,7 @@ const ContactDetails = () => {
           type="text"
           placeholder="Enter full name"
           required
+          value={form.fullName} // bind value to state
           onChange={(e) =>
             setForm({ ...form, fullName: e.target.value })
           }
@@ -41,6 +50,7 @@ const ContactDetails = () => {
           type="email"
           placeholder="Enter email"
           required
+          value={form.email}
           onChange={(e) =>
             setForm({ ...form, email: e.target.value })
           }
@@ -51,6 +61,7 @@ const ContactDetails = () => {
           type="tel"
           placeholder="Enter contact number"
           required
+          value={form.contactNumber}
           onChange={(e) =>
             setForm({ ...form, contactNumber: e.target.value })
           }
@@ -60,6 +71,7 @@ const ContactDetails = () => {
         <input
           type="date"
           required
+          value={form.dob}
           onChange={(e) =>
             setForm({ ...form, dob: e.target.value })
           }
