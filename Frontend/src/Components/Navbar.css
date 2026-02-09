@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 30px;
+  background-color: #1f2937; /* dark blue-gray */
+  color: white;
+}
+
+nav h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 16px;
+  font-size: 15px;
+  padding-bottom: 4px;
+}
+
+nav a:hover {
+  color: #facc15; /* yellow hover */
+}
+
+nav a.active {
+  border-bottom: 2px solid #facc15;
+  font-weight: 600;
+}
+
+button {
+  background-color: #ef4444; /* red */
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #dc2626;
+}
