@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // User Pages
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
-import ContactDetails from "./Pages/ContactDetails";
-import PersonalDetails from "./Pages/PersonalDetails";
+import VolunteerDetails from "./Pages/VolunteerDetails";
+import VolunteerInformation from "./Pages/VolunteerInformation";
 
 // Admin Pages
 import AdminLogin from "./Pages/AdminLogin";
@@ -22,8 +22,8 @@ function App() {
         {/* User Routes */}
         <Route path="/" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/contact-details" element={<ContactDetails />} />
-        <Route path="/personal-details" element={<PersonalDetails />} />
+        <Route path="/volunteer-details" element={<VolunteerDetails/>} />
+        <Route path="/volunteer-information" element={<VolunteerInformation />} />
 
         {/* Admin Routes */}
         <Route path="/admin/login" element={<AdminLogin />} />

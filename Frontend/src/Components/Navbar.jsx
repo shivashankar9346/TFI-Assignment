@@ -28,21 +28,21 @@ const Navbar = () => {
       ) : (
         <div>
           <Link
-            to="/contact-details"
+            to="/volunteer-details"
             className={
-              location.pathname === "/contact-details" ? "active" : ""
+              location.pathname === "/volunteer-details" ? "active" : ""
             }
           >
-            Contact Details
+            Volunteer Details
           </Link>
 
           <Link
-            to="/personal-details"
+            to="/volunteer-information"
             className={
-              location.pathname === "/personal-details" ? "active" : ""
+              location.pathname === "/volunteer-information" ? "active" : ""
             }
           >
-            Personal Details
+           Volunteer Information
           </Link>
 
           <button onClick={logout}>Logout</button>

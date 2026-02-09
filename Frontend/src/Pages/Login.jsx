@@ -20,7 +20,7 @@ const Login = () => {
     if (res?.token) {
       localStorage.setItem("token", res.token);
       alert("Login successful");
-      navigate("/contact-details");
+      navigate("/volunteer-details");
     } else {
       alert("Invalid credentials");
     }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import API from "../Server/Api";
-import "./ContactDetails.css";
+import "./VolunteerDetails.css";
 
 const ContactDetails = () => {
   const [form, setForm] = useState({
